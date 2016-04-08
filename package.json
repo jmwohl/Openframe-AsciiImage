@@ -1,0 +1,79 @@
+{
+  "name": "openframe-ascii-image",
+  "version": "0.1.7",
+  "description": "Openframe plugin which adds support for images via fbi.",
+  "main": "extension.js",
+  "scripts": {
+    "install": "./install.sh",
+    "uninstall": "./uninstall.sh",
+    "patch-release": "npm version patch && npm publish && git push --follow-tags",
+    "test": "istanbul cover ./node_modules/.bin/_mocha"
+  },
+  "keywords": [
+    "openframe",
+    "openframe-image",
+    "format"
+  ],
+  "author": {
+    "name": "Jonathan Wohl",
+    "url": "http://jonathanwohl.com"
+  },
+  "contributors": [
+    {
+      "name": "Jonathan Wohl",
+      "url": "http://jonathanwohl.com"
+    },
+    {
+      "name": "Ishac Bertran",
+      "url": "http://ishacbertran.com"
+    }
+  ],
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "istanbul": "^0.4.2",
+    "mocha": "^2.3.4",
+    "sinon": "^1.17.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpenframeProject/Openframe-Image.git"
+  },
+  "dependencies": {
+    "debug": "^2.2.0"
+  },
+  "gitHead": "ea7ab44c6d608abce26dd1a6caf1fc8c14905a9e",
+  "bugs": {
+    "url": "https://github.com/OpenframeProject/Openframe-Image/issues"
+  },
+  "homepage": "https://github.com/OpenframeProject/Openframe-Image#readme",
+  "_id": "openframe-image@0.1.7",
+  "_shasum": "330b81fd5adb390f9626b1dd0c8a9a59208207e4",
+  "_from": "openframe-image@>=0.1.0 <0.2.0",
+  "_npmVersion": "3.5.3",
+  "_nodeVersion": "4.2.2",
+  "_npmUser": {
+    "name": "jonwohl",
+    "email": "jon@wohllabs.com"
+  },
+  "dist": {
+    "shasum": "330b81fd5adb390f9626b1dd0c8a9a59208207e4",
+    "tarball": "https://registry.npmjs.org/openframe-image/-/openframe-image-0.1.7.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "jonwohl",
+      "email": "jon@wohllabs.com"
+    },
+    {
+      "name": "openframe",
+      "email": "info@openframe.io"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-13-west.internal.npmjs.com",
+    "tmp": "tmp/openframe-image-0.1.7.tgz_1458408751669_0.8666776877362281"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/openframe-image/-/openframe-image-0.1.7.tgz",
+  "readme": "ERROR: No README data found!"
+}
