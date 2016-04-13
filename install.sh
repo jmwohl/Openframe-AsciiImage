@@ -15,18 +15,30 @@ if [ $os == "Linux" ]; then
     # do we really want to upgrade? this could take a damn long time.
     # sudo apt-get upgrade
 
-    # same for any debian disto (untested), including rpi (tested)
+    # fim is no longer available in Jessie :(
     # sudo apt-get install -y fim
 
+    # So we'll build it from source!
+    #
+    # Install some dependencies
     sudo apt-get install -y flex bison libreadline-dev libexif-dev libpng-dev libjpeg-dev libgif-dev libtiff-dev libpoppler-dev libaa1-dev
+    # Download the source
     wget http://download.savannah.nongnu.org/releases/fbi-improved/fim-0.5-rc1.tar.gz
-    tar xzf fim-0.5-rc1.tar.gz 
-    cd fim-0.5-rc1 
-    # ./configure --help=short 
+    # Unpack the source
+    tar xzf fim-0.5-rc1.tar.gz
+    # Navigate into directory
+    cd fim-0.5-rc1
+
     # read the ./configure --help=short output: you can give options to ./configure
-    ./configure --enable-aa 
-    make 
+    # ./configure --help=short
+
+    # Configure the build
+    ./configure --enable-aa
+    # Build it!
+    make
+    # Install the built fim
     sudo make install
+    # Reload the environment stuff in .bashrc
     source ~/.bashrc
 
     if [ $arq == "armv7l" ]; then

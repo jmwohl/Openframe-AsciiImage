@@ -1,7 +1,7 @@
 {
   "name": "openframe-ascii-image",
   "version": "0.1.7",
-  "description": "Openframe plugin which adds support for images via fbi.",
+  "description": "Openframe plugin which adds support for ascii images via fim.",
   "main": "extension.js",
   "scripts": {
     "install": "./install.sh",
